@@ -79,7 +79,8 @@ The GCS-8 runs at 48 kHz in 32-bit float only, so the split runs at 48 kHz/`FLOA
 - **Audio:** confirmed with PipeWire 1.0.5, the alsa-lib split path, on 2026-10-24.
 - **Upstream:** submission to `alsa-ucm-conf` is planned.
 
-Reports from other distributions and PipeWire versions are welcome: please open an issue.
+Reports from other distributions and PipeWire versions are welcome. `docs/testing.md` has the
+steps and what to include in an issue.
 
 ## Licence
 
