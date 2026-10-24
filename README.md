@@ -1,4 +1,7 @@
-# BOSS GCS-8 on Linux: split stereo devices
+# BOSS GIGCASTER 8 (GCS-8) on Linux: split stereo devices
+
+ALSA UCM profile for the BOSS GIGCASTER 8. Splits channel pairs into named stereo devices for easy
+selection in apps.
 
 On Windows, the BOSS GCS-8 driver shows each channel pair as its own stereo device: "CH USB",
 "CH 3-AUX", "CH 2" and so on. On Linux the GCS-8 is class compliant, so it shows up as one
@@ -34,8 +37,8 @@ PipeWire's own **Pro Audio** profile is still there.
 Requires `alsa-ucm-conf` (installed on almost every desktop distribution).
 
 ```
-git clone https://github.com/Skrappjaw/gcs8-linux.git
-cd gcs8-linux
+git clone https://github.com/Skrappjaw/gcs-8-linux.git
+cd gcs-8-linux
 sudo ./install.sh
 ```
 
@@ -76,7 +79,11 @@ The GCS-8 runs at 48 kHz in 32-bit float only, so the split runs at 48 kHz/`FLOA
 - **Audio:** confirmed with PipeWire 1.0.5, the alsa-lib split path, on 2026-10-24.
 - **Upstream:** submission to `alsa-ucm-conf` is planned.
 
-Reports from other distributions and PipeWire versions are welcome.
+Reports from other distributions and PipeWire versions are welcome: please open an issue.
+
+## Licence
+
+BSD 3-Clause, the same as alsa-ucm-conf. See `LICENSE`.
 
 ## Development
 
